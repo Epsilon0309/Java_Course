@@ -1,0 +1,17 @@
+package VarArg;
+
+public class Addition {
+
+	public static void add(int... n) {
+		int sum = 0;
+		for (int i : n) {
+			sum += i;
+		}
+		System.out.println(sum);
+	}
+
+	public static void main(String[] args) {
+		add();
+		add(5, 10, 15);
+	}
+}
