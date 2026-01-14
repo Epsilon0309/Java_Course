@@ -22,8 +22,6 @@ public class Animal {
 
 class Dog extends Animal{
 	
-	int leg;
-	
 	Dog(String name,String color,int leg){
 		this.name=name;
 		this.color=color;

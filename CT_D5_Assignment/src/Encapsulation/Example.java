@@ -1,7 +1,5 @@
 package Encapsulation;
 
-import Helper.Laptop;
-
 public class Example {
 //	
 //	static Laptop l1; // static
