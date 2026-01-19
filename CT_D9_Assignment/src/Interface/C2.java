@@ -1,0 +1,21 @@
+package Interface;
+
+public class C2 extends C1 implements I1,I2 {
+	
+}
+
+class C1{
+	
+}
+
+interface I1 extends I2,I3{
+	
+}
+
+interface I2{
+	
+}
+
+interface I3{
+	
+}
