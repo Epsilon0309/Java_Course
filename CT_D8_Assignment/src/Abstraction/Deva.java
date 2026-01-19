@@ -1,0 +1,10 @@
+package Abstraction;
+
+public abstract class Deva extends Parent{
+	
+	@Override
+	public void homeLoan() {
+		System.out.println("Deva paid home loan");
+	}
+
+}
