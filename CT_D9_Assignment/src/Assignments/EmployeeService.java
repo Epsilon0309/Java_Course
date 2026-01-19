@@ -1,0 +1,18 @@
+package Assignments;
+
+public interface EmployeeService {
+
+	Employee[] getHighSalaryEmployees(Employee[]employees,double minSalary);
+	
+	double calculateAverageSalary(Employee[]employees);
+	
+	Employee getTopPaidEmployee(Employee[]employees);
+	
+	Employee[] getExperiencedEmployees(Employee[]employees,int minYears);
+	
+	Employee getTopPaidEmployeeByDepartment(Employee[]employees,String department);
+	
+	double getAverageSalaryByDeparment(Employee[]employees,String department);
+	
+}
+

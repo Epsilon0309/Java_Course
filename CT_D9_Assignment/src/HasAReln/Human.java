@@ -2,8 +2,8 @@ package HasAReln;
 
 public class Human {
 
-	private Heart heart;// Strong
-	private Address address;// weak
+	private Heart heart;// Strong Association i.e composition
+	private Address address;// weak association i.e aggregation
 
 	// during the object initialization heart is already included
 	public Human() {
