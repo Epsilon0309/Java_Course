@@ -55,10 +55,14 @@ public class Car1 {
 		Car1 c1 = new Car1("A8",250000000.00,"Black",10);
 		Car1 c2 = new Car1("A8",250000001.00,"Black",10);
 		Car1 c3 = new Car1();
+		Car1 c4 = new Car1();
+		
 		
 		System.out.println(c1.toString());
 		
 		System.out.println(c1.hashCode());
+		System.out.println(c3.hashCode());
+		System.out.println(c4.hashCode());
 		System.out.println(c1.hashCode(c2));
 		
 		System.out.println(c3.equals(c2));

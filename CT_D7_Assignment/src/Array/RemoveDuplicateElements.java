@@ -15,13 +15,21 @@ public class RemoveDuplicateElements {
 	public static int[] removeDuplicateArray(int[]a) {
 		int []ans1 = new int[a.length];
 		int i=0;int k=0;
-		for(;i<a.length;i++) {
-			if(frequency(a[i],a)!=0 && frequency(a[i],ans1)!=0) {
-				ans1[k++]=a[i];
+		ans1[k]=a[i];
+		k++;
+		for(i=1;i<a.length;i++) {
+			if(frequency(a[i],ans1)==0) {
+				ans1[k]=a[i];
+				k++;
 			}
 		}
 		
-		return ans1;
+		int []ans=new int[k];
+		for(int j=0;j<k;j++) {
+			ans[j]=ans1[j];
+		}
+		
+		return ans;
 	}
 	
 	public static void printInputInt(int []ab) {
@@ -33,7 +41,7 @@ public class RemoveDuplicateElements {
 	}
 	
 	public static void main(String[] args) {
-		int []a= {1,7,8};
+		// int []a= {1,7,8};
 		int[]b= {5,6,10,20,10,20,7};
 		
 		printInputInt(removeDuplicateArray(b));

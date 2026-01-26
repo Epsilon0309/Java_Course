@@ -1,4 +1,4 @@
-package Classwork;
+package Assignment;
 
 public class RemoveDigits {
 	

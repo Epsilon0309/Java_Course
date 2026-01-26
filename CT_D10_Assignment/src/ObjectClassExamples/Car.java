@@ -24,6 +24,9 @@ public class Car {
 		Car c3 = new Car();
 		Car c4 = c2;
 		Car c5 = new Car("A8",250000000.00,"Black",10);
+		String s1="Java";
+		String s2="Java";
+		String s3=new String("Java");
 		
 		System.out.println(c1);// jvm internally calls the toString function and returns the location of the object created
 		System.out.println(c1.toString());// same result as the previous
@@ -34,6 +37,11 @@ public class Car {
 		
 		System.out.println(c1.hashCode());// it returns the integer hashed value of every parameter present for a particular object
 		System.out.println(c3.hashCode());
+		System.out.println(c2.hashCode());
+		System.out.println(c5.hashCode());
+		System.out.println(s1.hashCode());// these three are same because it checks the hash code value based on content
+		System.out.println(s2.hashCode());
+		System.out.println(s3.hashCode());
 		
 		System.out.println(c1.equals(c4));// it compares the both object address present in the heap
 		System.out.println(c4.equals(c2));// basically inside c4 the address of c2 is given so it is giving true as output

@@ -1,25 +1,32 @@
 package Assignments;
 
-public class DiamondPattern {
+import java.util.Scanner;
 
-	public static void diamondPattern(int n) {
-        for (int i = 0; i < n; i++) {
-            
-            for (int j = 0; j < 2 * (n - i) - 1; j++) {
+public class InvertedNormalPyramid {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+
+        // Upper half
+        for (int i = 1; i <= n; i++) {
+            for (int s = i; s < n; s++)
                 System.out.print(" ");
-            }
-
-            for (int k = 0; k < 2 * i + 1; k++) {
-                System.out.print("* ");
-            }
-            
+            for (int j = 1; j <= 2 * i - 1; j++)
+                System.out.print("*");
             System.out.println();
         }
 
-	}
-	
-	public static void main(String[] args) {
-		diamondPattern(3);
-	}
+        // Lower half
+        for (int i = n - 1; i >= 1; i--) {
+            for (int s = n; s > i; s--)
+                System.out.print(" ");
+            for (int j = 1; j <= 2 * i - 1; j++)
+                System.out.print("*");
+            System.out.println();
+        }
+        sc.close();
+    }
 	
 }

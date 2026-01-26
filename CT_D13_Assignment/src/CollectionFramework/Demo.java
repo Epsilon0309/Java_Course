@@ -8,7 +8,7 @@ public class Demo {
 		// generic -> same type of element <DataType>
 		// non-generic -> different type of elements
 
-		List<String> list = new ArrayList<String>();
+		List<String> list = new ArrayList<String>();//uc
 		list.add("abc");
 		list.add("xyz");
 		list.add("def");

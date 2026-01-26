@@ -26,9 +26,16 @@ public class Vehicle {
 
 class Bike extends Vehicle{
 	
+	double price;
+	
 	Bike(String brand,String color,double price){
 		this.brand=brand;
 		this.color=color;
-		this.price=price;
+		this.price=100;
+	}
+	public void printVehicle() {
+		System.out.println(brand);
+		System.out.println(color);
+		System.out.println(price);
 	}
 }
