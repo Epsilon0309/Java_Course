@@ -10,6 +10,19 @@ public class CountOfFactors {
 			}
 		}
 		return count;
+
+	}
+	
+	public void hello() {
+		class Hello{
+			
+		}
+	}
+	
+	public CountOfFactors() {
+		interface abc{
+			
+		}
 	}
 
 	public static void main(String[] args) {
